@@ -1,17 +1,21 @@
-<!DOCTYPE html>
-<html lang="fr" dir="ltr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Single page vacances à la montagne">
-    <title>Les Vacances à la Montagne</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css    ">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
+<?php
+    include_once('./src/header.inc.php');
+?>
 <body>
+    <header>
+        <h1>Vacances à la montagne</h1>
+        <nav>
+            <ul>
+                <li><a href="#"><img src="./asset/logo.png" alt="logo france montagne"></a></li>
+                <li><a href="#" class="active">guide des stations</a></li>
+                <li><a href="#guide">magazine</a></li>
+                <li><a href="#">info live</a></li>
+                <li><a href="#footer">réservation</a></li>
+                <li><img src="./asset/loop.png" alt="loupe"></li>
+            </ul>
+        </nav>
+    </header>
     <?php
-        include_once('./src/header.inc.php');
         include_once('./src/main.inc.php');
         include_once('./src/footer.inc.php');
     ?>
